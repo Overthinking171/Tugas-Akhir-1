@@ -75,7 +75,12 @@ nav .navbar-brand:hover {
 }
 /* Dropdown todo's */
 .dropdown ul{
-  width: 100%;
+  width: 450px;
+  top: 30px;
+  transition: 0.6s ease;
+  left: -390px;
+  transition: 0.6s ease-in;
+  /* transform: translateX(-85); */
 }
 .banner {
   position: absolute;
@@ -204,6 +209,70 @@ button:hover {
   font-weight: normal;
 }
 .box-cu .box{
-  min-width: 212px;
-  max-width: 300px;
+  width: 250px;
+}
+.card .card-img img{
+  width: 100%;
+  border-radius: 0;
+}
+/* INFORMATION PLUS */
+div.col-9:nth-child(2) > button:nth-child(2){
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-top: 13%;
+}
+div.col-9:nth-child(2) > button:nth-child(3){
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-top: 13%;
+
+}
+/* blog */
+.join-now .card-s{
+  background: red!important;
+}
+.col-3 button{
+  background-color: #fff!important;
+  color: red;
+  font-weight: 600!important;
+  font-family: 'Outfit';
+}
+.col-3 button:hover{
+  padding: 30px;
+  border: solid 2px #fff!important;
+  background-color: red!important;
+  color: white!important;
+}
+.join-text h1{
+  font-size: 1.4em;
+  font-weight: 600!important;
+  font-family: 'Outfit'!important;
+}
+/* footer */
+footer{
+  background: red;
+}
+.row-foo .text-title{
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: left;
+  padding: 0 1.3em!important;
+  color: #fff!important;
+  margin-bottom: 0;
+}
+.row-foo ul{
+  list-style-type: none;
+}
+.row-foo ul li a{
+text-align: left;
+font-size: 0.7em;
+color: #fff!important;
+}
+.row-foo ul li a span:hover{
+  border-bottom: solid 1px #fff!important;
+}
+.row-foo ul li a{
+  gap: 10px;
 }
