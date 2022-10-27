@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faster Express</title>
+
     <!-- CSS only -->
     <link
       rel="stylesheet"
@@ -12,6 +13,7 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+
     <!-- Javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -33,7 +35,7 @@
       src="https://kit.fontawesome.com/f7b5e75249.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="bootstrap/js/bootstrap.js" />
+    <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="/bootstrap/js/bootstrap.bundle.js"></script>
   </head>
 
@@ -57,6 +59,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Navigation -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -76,6 +79,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#blog">Blog</a>
             </li>
+
+            <!-- TODO'S -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link"
@@ -142,7 +147,9 @@
                     />
                   </div>
                 </div>
-                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
                 <li class="modal-footer">
                   <button
                     type="button"
@@ -166,6 +173,8 @@
           </ul>
         </div>
       </nav>
+
+      <!-- Jumbotron -->
       <div class="container">
         <div class="jumbotron mt-5 mx-auto text-center position-absolute w-100">
           <div class="container">
@@ -174,10 +183,79 @@
               FASTER is committed to being a trusted partner throughout
               Indonesia.
             </p>
-            <button type="button" class="btn btn-primary">Check Now</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              data-isi="Web Master"
+            >
+              Check Now
+            </button>
+
+            <!-- Check Now -->
+            <div
+              class="alert-order modal"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampelModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header mx-auto">
+                    <h4
+                      class="modal-title text-dark text-center"
+                      id="exampleModalLabel"
+                    >
+                      Daftar Masukan Paket
+                    </h4>
+                  </div>
+                  <div class="container" id="target">
+                    <table class="table">
+                      <tr>
+                        <th>Nama</th>
+                        <td id="t_nama">-</td>
+                      </tr>
+                      <tr>
+                        <th>Alamat</th>
+                        <td id="t_alamat">-</td>
+                      </tr>
+                      <tr>
+                        <th>No HP</th>
+                        <td id="t_nohp">-</td>
+                      </tr>
+                      <tr>
+                        <th>Berat Paket</th>
+                        <td id="t_berat">-</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="showDataFromLocalstorage()"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Background -->
       <section class="background"></section>
       <section class="banner"></section>
     </header>
@@ -232,6 +310,7 @@
             FASTER berkomitmen menjadi partner terpercaya di seluruh Indonesia.
             Inilah 9 alasan tepat untuk memilih FASTER
           </p>
+
           <!-- Sliders -->
           <div class="container">
             <div class="row">
@@ -305,6 +384,7 @@
                           <div class="card-body font-weight-bold text-center">
                             Penjemputan Paket
                           </div>
+                          F
                           <div class="lead text-center">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quasi, facilis.
@@ -441,6 +521,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Form -->
               <form
                 role="form"
                 id="contact-form"
@@ -619,6 +701,8 @@
                 Pilih layanan yang tepat untuk bisnis anda.
               </p>
             </div>
+
+            <!-- Sliders Again -->
             <div class="col-9 col-md-8">
               <div
                 id="carouselExampleInterval"
@@ -741,6 +825,7 @@
         </div>
       </section>
 
+      <!-- Blog -->
       <section id="blog" class="mt-5">
         <div class="container p-5">
           <h1 class="text title text-center mt-5">BLOG</h1>
@@ -828,7 +913,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 mx-auto p-4">
+            <dov class="col-lg-4 col-md-4 mx-auto p-4">
               <div class="card box">
                 <div class="card-img p-4 text-center">
                   <img
@@ -843,7 +928,7 @@
                   <div class="lead">Selasa, 20 Februari 2022</div>
                 </div>
               </div>
-            </div>
+            </dov>
           </div>
         </div>
       </section>
@@ -857,7 +942,7 @@
         >
           <div class="row-foo col-3 col-md-2">
             <h4 class="text-title">INFORMASI</h4>
-            <ul class="mt-4">
+            <ul class="contact mt-4">
               <li class="nav-item">
                 <a class="nav-link" href="#"><span>FAQ</span></a>
               </li>
@@ -871,7 +956,7 @@
           </div>
           <div class="row-foo col-3 col-md-3">
             <h4 class="text-title">PRODUK & LAYANAN</h4>
-            <ul class="mt-4">
+            <ul class="contact mt-4">
               <li class="nav-item">
                 <a class="nav-link" href="#"><span>F-Express</span></a>
               </li>
@@ -894,47 +979,60 @@
           </div>
           <div class="row-foo col-5 col-md-4">
             <h4 class="text-title">INFO KONTAK</h4>
-            <ul class="mt-4">
+            <ul class="contact mt-4">
               <li class="nav-item">
                 <a class="nav-link d-flex" href="#">
                   <div class="icon">
                     <i class="fa-solid fa-location-pin"></i>
                   </div>
-                  <span>Jl. Pegangsaan Timur nomor 56 Jakarta</span></a
-                >
+                  <span>Jl. Pegangsaan Timur nomor 56 Jakarta</span>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><span>Terms & Condition</span></a>
+                <a class="nav-link d-flex" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <span>+62 854-6541-9821</span>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><span>Privacy Policy</span></a>
+                <a class="nav-link d-flex" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-message"></i>
+                  </div>
+                  <span>faster@gmail.com</span>
+                </a>
               </li>
             </ul>
           </div>
           <div class="row-foo col-4 col-md-3">
             <h4 class="text-title">DOWNLOAD APP</h4>
-            <ul class="mt-4">
+            <ul class="contact mt-4">
               <li class="nav-item">
-                <a class="nav-link" href="#"><span>FAQ</span></a>
+                <a class="nav-link" href="#"><span>Coming Soon</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><span>Terms & Condition</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><span>Privacy Policy</span></a>
+                <a class="nav-link" href="#"><span>My App</span></a>
               </li>
             </ul>
           </div>
         </div>
+        <div class="lead text-light p-1">
+          &copy;2022 PT. FASTER Ekspres Indonesia. All rights reserved.
+        </div>
       </div>
     </footer>
 
+    <!-- Sticky Navbar -->
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var nav = document.querySelector("nav");
         nav.classList.toggle("sticky", window.scrollY > 0);
       });
     </script>
+
+    <!-- TODO's & LOCAL STORAGE -->
     <script>
       $("#exampleModal").on("show.bs.modaltodos", function (event) {
         var button = $(event.relatedTarget);
