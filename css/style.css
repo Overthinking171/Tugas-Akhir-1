@@ -1,12 +1,17 @@
+/* Import Font Google */
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins&display=swap");
+
+/* All */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
 }
+
+/* Background */
 .background {
   width: 100%;
   position: relative;
@@ -16,6 +21,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* Navbar */
 nav {
   left: 0;
   transition: 0.6s ease-in-out;
@@ -45,6 +52,11 @@ nav ul li a:hover {
   color: red !important;
   font-weight: bold;
 }
+.navbar-toggler {
+  background: rgba(255, 255, 255, 0) !important;
+  border: solid 1px #aaa !important;
+}
+
 /* addEventListener */
 .navbar.sticky {
   padding: 20px 100px!important;
@@ -73,6 +85,7 @@ nav .navbar-brand {
 nav .navbar-brand:hover {
   color: red !important;
 }
+
 /* Dropdown todo's */
 .dropdown ul{
   width: 450px;
@@ -80,8 +93,9 @@ nav .navbar-brand:hover {
   transition: 0.6s ease;
   left: -390px;
   transition: 0.6s ease-in;
-  /* transform: translateX(-85); */
 }
+
+/* Banner */
 .banner {
   position: absolute;
   top: 0;
@@ -92,16 +106,18 @@ nav .navbar-brand:hover {
   opacity: 40%;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 997;
+  z-index: 111;
 }
+
+/* Jumbotron */
 .jumbotron {
   top: 10%;
   padding: 30px;
-  z-index: 999;
+  z-index: 222;
   left: 0;
   color: #fff;
   transition: 0.5s ease-in-out;
-  position: relative;
+  position: inherit;
   background: rgba(255, 255, 255, 0) !important;
 }
 .jumbotron h1 {
@@ -123,14 +139,29 @@ button:hover {
   background-color: #007bff !important;
   border: solid 1px #007bff !important;
 }
-.navbar-toggler {
-  background: rgba(255, 255, 255, 0) !important;
-  border: solid 1px #aaa !important;
+
+/* Alert Button */
+.alert-order{
+  position:absolute;
+  height: auto;
+  top: -60%;
+  z-index: 999!important;
 }
+.modal-backdrop{
+  position: relative;
+}
+.table tr th{
+  text-align: left;
+  padding: 10px 30px;
+}
+.table tr td{
+  text-align: left;
+}
+
 /* Main Section */
 .box-list {
   margin-top: -11%;
-  z-index: 999;
+  z-index: 888;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -161,6 +192,7 @@ button:hover {
   font-size: 1em;
   font-family: "Inter";
 }
+
 /* about-us */
 #about-us .title-text{
     text-transform: uppercase;
@@ -183,6 +215,7 @@ button:hover {
 .carousel-control-prev,.carousel-control-next{
   width: 50px;
 }
+
 /* Contact Us */
 #contact-us{
   background: red;
@@ -215,6 +248,7 @@ button:hover {
   width: 100%;
   border-radius: 0;
 }
+
 /* INFORMATION PLUS */
 div.col-9:nth-child(2) > button:nth-child(2){
   width: 50px;
@@ -229,6 +263,12 @@ div.col-9:nth-child(2) > button:nth-child(3){
   margin-top: 13%;
 
 }
+.join-text h1{
+  font-size: 1.4em;
+  font-weight: 600!important;
+  font-family: 'Outfit'!important;
+}
+
 /* blog */
 .join-now .card-s{
   background: red!important;
@@ -244,11 +284,6 @@ div.col-9:nth-child(2) > button:nth-child(3){
   border: solid 2px #fff!important;
   background-color: red!important;
   color: white!important;
-}
-.join-text h1{
-  font-size: 1.4em;
-  font-weight: 600!important;
-  font-family: 'Outfit'!important;
 }
 /* footer */
 footer{
@@ -275,4 +310,10 @@ color: #fff!important;
 }
 .row-foo ul li a{
   gap: 10px;
+}
+.contact .nav-item .nav-link .icon{
+  font-size: 1.3em;
+}
+.contact .nav-item .nav-link span{
+  font-size: 1.3em;
 }
